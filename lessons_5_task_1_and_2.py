@@ -22,6 +22,7 @@ def do_nothing(name, is_demon, second):
     print(f'Task {name} finish, {"is demon" if is_demon else "not demon"}')
 
 
+@Decorator
 def download(link, name):
     format = link.split('.')[-1]
     print(f'Начало загрузки файла {name}.{format}')
